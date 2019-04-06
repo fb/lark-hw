@@ -1229,7 +1229,7 @@ Wire Wire Line
 Wire Wire Line
 	8100 2300 8100 850 
 Wire Wire Line
-	6900 850  8100 850 
+	6900 850  7650 850 
 Wire Wire Line
 	2500 2050 2500 2450
 Wire Wire Line
@@ -1245,4 +1245,44 @@ Wire Wire Line
 Wire Wire Line
 	600  4950 1050 4950
 Connection ~ 600  4150
+$Comp
+L Device:R_Small R?
+U 1 1 5CAB0101
+P 7650 700
+F 0 "R?" H 7709 746 50  0000 L CNN
+F 1 "1k2" H 7709 655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7650 700 50  0001 C CNN
+F 3 "~" H 7650 700 50  0001 C CNN
+	1    7650 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5CAB0325
+P 7600 2800
+F 0 "R?" H 7659 2846 50  0000 L CNN
+F 1 "1k2" H 7659 2755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7600 2800 50  0001 C CNN
+F 3 "~" H 7600 2800 50  0001 C CNN
+	1    7600 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 7650 550  1    50   Input ~ 0
+SENSPWR
+Text HLabel 7600 2650 1    50   Input ~ 0
+SENSPWR
+Wire Wire Line
+	7350 3100 7600 3100
+Wire Wire Line
+	7600 3100 7600 2900
+Connection ~ 7350 3100
+Wire Wire Line
+	7600 2700 7600 2650
+Wire Wire Line
+	7650 850  7650 800 
+Connection ~ 7650 850 
+Wire Wire Line
+	7650 850  8100 850 
+Wire Wire Line
+	7650 600  7650 550 
 $EndSCHEMATC
